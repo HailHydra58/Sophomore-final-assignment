@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+		<title>主页</title>
+		<link rel="stylesheet" href="./css/unc0ver.min.css">
+		<link rel="stylesheet" href="fonts/css/font-awesome.css">
+	</head>
+
+	<body>
+		<!--导航栏-->
+		<div id="navbar">
+			<div id="navInner">
+				<a href="store.html"><span id="navbarName">Game store<i class="fa fa-steam"></i></span></a>
+				<span style="float: right;padding-top: 5px;"><i class="fa fa-adjust fa-2x" onclick="toggleDarkMode()"></i></span>
+				<a href="homePage.html"><span class="right" style="padding-top: 5px;"><i class="fa fa-home fa-2x"></i></span></a>
+				<a href="signIn.html"><span class="right" style="padding-top: 5px;"><i class="fa fa-user fa-2x"></i></span></a>
+			</div>
+		</div>
+
+		<!--背景设置-->
+		<div class="backgroundMountain"></div>
+		<div class="backgroundMountain" id="blurredMountain"></div>
+
+		<!--内容主体-->
+		<div class="mainContent">
+			<!--醒目大字-->
+			<h1 id="uncoverCenterTitle">Hail Hydra</h1>
+			<h2>这里有最新的游戏购买途径</br>已经为您精心挑选</h2>
+			<!--页面动画显示-->
+			<div id="comingSoon" style="display: none;">
+				<p id="currentProgress"></p>
+				<div id="progress">
+					<div id="progressBar"></div>
+				</div>
+			</div>
+			<!--前往按钮-->
+			<a href="store.html"><div id="latestButton" class="button expandOutElement">Let's Go</div></a>
+			<!-- 两个小图 -->
+			<div style="padding-bottom: 20px;">
+				<i class="fa fa-gamepad fa-3x fa-spin"></i>
+				<i class="fa fa-gamepad" style="padding-left: 40px;font-size: 3em;"></i>
+			</div>
+			<!--提示右上角反色-->
+			<p id="viewLegacyVersions" class="fadeUpElement viewMoreGlobal">
+				如果是夜间浏览不妨试试右上角的按钮
+			</p>
+
+			<!--介绍自家游戏平台-->
+			<div id="detailedInfo">
+				<div class="aboutJailbreak hidden">
+					<h1>关于 GameStore</h1>
+					<p>这是一个简洁高效的游戏购买平台，得益于优秀的排版和高玩的推荐您可以迅速的从众多游戏里已很快的速度挑选到自己喜欢的游戏，而且因为与游戏厂商密切的合作的缘故，我们能获得一手的最低价格，来保证您的钱包体验.</p>
+				</div>
+
+				<div class="aboutJailbreak hidden">
+					<h1>操作流程简介</h1>
+					<div class="installInfo" style="display: block;">
+						<h3>注册</h3>
+						<ol>
+							<li>输入您的登录用户名及密码还有邮箱然后点击确定</li>
+							<li>接下来我们会给您的邮箱发送一个验证码</li>
+							<li>输入您的验证码到框内以便完成注册</li>
+						</ol>
+					</div>
+					<div class="installInfo" style="display: block;">
+						<h3>购买</h3>
+						<ol>
+							<li>有微信，支付宝，银联三种支付方式。要先进行支付绑定才能进行购买</li>
+							<li>按照提示输入您的微信（支付宝、银联）账户进行绑定，并设置6位数的支付密码</li>
+							<li>选择好您需要购买的游戏加入购物篮点击确定</li>
+							<li>输入6位数的密码进行扣款支付</li>
+						</ol>
+					</div>
+				</div>
+
+				<!--展示自家优势-->
+				<div class="featureWrapper hidden">
+					<i class="fa fa-asl-interpreting fa-5x"></i>
+					<h1>兼容</h1>
+					<p>兼容目前所有的操作系统，保证您的游戏体验拉满</p>
+				</div>
+				<div class="featureWrapper hidden">
+					<i class="fa fa-motorcycle fa-5x"></i>
+					<h1>稳定</h1>
+					<p>为您的下载"保驾护航"，已最快的速度保证您玩到游戏</p>
+				</div>
+				<div class="featureWrapper hidden">
+					<i class="fa fa-shield fa-5x"></i>
+					<h1>安全</h1>
+					<p>用最先进的防盗保证您的游戏账户安全，完全可以放心充值</p>
+				</div>
+			</div>
+
+			<!--展示开发人员-->
+			<div class="hidden">
+				<h1>开发人员:</h1>
+				<a>
+					<div class="creditsCardWrapper">
+						<img alt="pwn20wnd" src="img/twitter/ljdh.jpg">
+						<span class="devName">李骏町豪</span>
+					</div>
+				</a>
+				<a>
+					<div class="creditsCardWrapper">
+						<img alt="sbingner" src="img/twitter/hw.jpg">
+						<span class="devName">胡伟</span>
+					</div>
+				</a>
+
+				<!--网站尾巴-->
+				<p id="footer">
+					2020-2021学年第一学期
+					<img src="img/heart.svg" alt="heart" width=15px height=15px style="padding: 0px 5px">
+					by <a style="color: cornflowerblue">期末考察方案</a>
+					</br></br>
+					<a style="color: cornflowerblue">网站</a> | <a style="color: cornflowerblue">联系我们</a>
+					<span id="iOSVersion"></span>
+				</p>
+			</div>
+		</div>
+	</body>
+
+	<script src="js/unc0ver.min.js"></script>
+
+</html>
